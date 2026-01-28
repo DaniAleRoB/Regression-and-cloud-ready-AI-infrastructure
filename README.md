@@ -1,5 +1,3 @@
----
-
 # Stellar Luminosity Modeling
 
 ### Linear and Polynomial Regression from First Principles

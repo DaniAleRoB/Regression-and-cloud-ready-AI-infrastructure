@@ -1,4 +1,3 @@
-
 ---
 
 # Stellar Luminosity Modeling
@@ -47,8 +46,11 @@ In this project, we model stellar luminosity using:
 ```
 /
 ├── README.md
-├── 01_part1_linreg_1feature.ipynb
-└── 02_part2_polyreg.ipynb
+├── imges
+├── noteBooks
+    ├── 01_part1_linreg_1feature.ipynb
+    ├── 02_part2_polyreg.ipynb
+
 ```
 
 * All datasets are **hard-coded NumPy arrays**
@@ -105,9 +107,7 @@ L = [0.15, 0.35, 1.00, 2.30, 4.10, 7.00, 11.2, 17.5, 25.0, 35.0]
 
 Model stellar luminosity as a linear function of mass:
 
-$$
-\hat{L} = wM + b
-$$
+$$\hat{L} = wM + b$$
 
 ### Key Steps Implemented
 
@@ -115,21 +115,21 @@ $$
 
    * Scatter plot of M vs L
    * Discussion of approximate linearity and physical plausibility
-     *(Insert Figure 1: M vs L scatter plot)*
+
+     ![alt text](<images/M vs L scatter plot.png>)
 
 2. **Model and loss function**
 
    * Mean Squared Error (MSE):
-     [
-     J(w,b) = \frac{1}{2N} \sum_{i=1}^{N} (\hat{L}_i - L_i)^2
-     ]
+     $$J(w,b) = \frac{1}{2N} \sum_{i=1}^{N} (\hat{L}_i - L_i)^2$$
 
 3. **Cost surface analysis (mandatory)**
 
    * Cost evaluated over a grid of (w) and (b)
    * Visualization via contour or surface plot
    * Interpretation of the global minimum
-     *(Insert Figure 2: Cost surface or contour plot)*
+
+     ![alt text](<images/Cost surface.png>)
 
 4. **Gradient derivation and implementation**
 
@@ -140,13 +140,16 @@ $$
 
    * Multiple learning rates tested
    * Loss vs iteration plots to analyze convergence behavior
-     *(Insert Figure 3: Loss vs iterations for different learning rates)*
+
+   ![alt text](<images/Loss vs iterations for different learning rates.png>)
 
 6. **Final fit visualization**
 
    * Regression line plotted over the data
    * Discussion of systematic errors
-     *(Insert Figure 4: Final linear fit)*
+
+   ![alt text](<images/Final linear fit.png>)
+
 
 ### Conceptual Discussion
 
@@ -161,17 +164,13 @@ $$
 
 Capture nonlinear and interaction effects using polynomial feature engineering:
 
-[
-\hat{L} = Xw + b
-]
+$$\hat{L} = Xw + b$$
 
 ### Feature Map
 
 The design matrix includes:
 
-[
-X = [M,\ T,\ M^2,\ M \cdot T]
-]
+$$X = [M,\ T,\ M^2,\ M \cdot T]$$
 
 (No constant column; bias is handled explicitly.)
 
@@ -182,7 +181,8 @@ X = [M,\ T,\ M^2,\ M \cdot T]
 1. **Dataset visualization**
 
    * Luminosity vs mass with temperature encoded as color
-     *(Insert Figure 5: L vs M colored by T)*
+
+     ![alt text](<images/L vs M colored by T.png>)
 
 2. **Feature engineering**
 
@@ -202,21 +202,24 @@ X = [M,\ T,\ M^2,\ M \cdot T]
 
 * Final loss and parameters reported
 * Predicted vs actual plots for each model
-  *(Insert Figures 6–8: Predicted vs actual for M1, M2, M3)*
+
+![alt text](<images/Predicted vs actual for M1, M2, M3.png>)
 
 5. **Cost vs interaction coefficient (mandatory)**
 
    * Cost evaluated as the interaction weight varies
    * Demonstrates the importance of interaction effects
-     *(Insert Figure 9: Cost vs interaction weight)*
+
+    ![alt text](<images/Cost vs interaction weight.png>)
 
 6. **Inference demonstration (mandatory)**
 
    * Prediction for a new star:
 
      * (M = 1.3), (T = 6600)
-   * Visualization showing where the prediction lies relative to the data
-     *(Insert Figure 10: Inference visualization)*
+     * Visualization showing where the prediction lies relative to the data
+     
+     ![alt text](<images/Inference visualization.png>)
 
 ---
 

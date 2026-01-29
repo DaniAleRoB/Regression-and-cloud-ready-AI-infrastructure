@@ -114,7 +114,7 @@ $$\hat{L} = wM + b$$
    * Scatter plot of M vs L
    * Discussion of approximate linearity and physical plausibility
 
-     ![alt text](<images/M vs L scatter plot.png>)
+     ![M vs L scatter plot](images/M vs L scatter plot.png)
 
 2. **Model and loss function**
 
@@ -127,7 +127,7 @@ $$\hat{L} = wM + b$$
    * Visualization via contour or surface plot
    * Interpretation of the global minimum
 
-     ![alt text](<images/Cost surface.png>)
+     ![Cost surface](images/Cost surface.png)
 
 4. **Gradient derivation and implementation**
 
@@ -139,14 +139,14 @@ $$\hat{L} = wM + b$$
    * Multiple learning rates tested
    * Loss vs iteration plots to analyze convergence behavior
 
-   ![alt text](<images/Loss vs iterations for different learning rates.png>)
+   ![Loss vs iterations for different learning rates](images/Loss vs iterations for different learning rates.png)
 
 6. **Final fit visualization**
 
    * Regression line plotted over the data
    * Discussion of systematic errors
 
-   ![alt text](<images/Final linear fit.png>)
+   ![Final linear fit](images/Final linear fit.png)
 
 
 ### Conceptual Discussion
@@ -180,7 +180,7 @@ $$X = [M,\ T,\ M^2,\ M \cdot T]$$
 
    * Luminosity vs mass with temperature encoded as color
 
-     ![alt text](<images/L vs M colored by T.png>)
+     ![L vs M colored by T](images/L vs M colored by T.png)
 
 2. **Feature engineering**
 
@@ -201,14 +201,14 @@ $$X = [M,\ T,\ M^2,\ M \cdot T]$$
 * Final loss and parameters reported
 * Predicted vs actual plots for each model
 
-![alt text](<images/Predicted vs actual for M1, M2, M3.png>)
+![Predicted vs actual for M1, M2, M3](images/Predicted vs actual for M1, M2, M3.png)
 
 5. **Cost vs interaction coefficient (mandatory)**
 
    * Cost evaluated as the interaction weight varies
    * Demonstrates the importance of interaction effects
 
-    ![alt text](<images/Cost vs interaction weight.png>)
+    ![Cost vs interaction weight](images/Cost vs interaction weight.png)
 
 6. **Inference demonstration (mandatory)**
 
@@ -217,7 +217,7 @@ $$X = [M,\ T,\ M^2,\ M \cdot T]$$
      * (M = 1.3), (T = 6600)
      * Visualization showing where the prediction lies relative to the data
      
-     ![alt text](<images/Inference visualization.png>)
+     ![Inference visualization](images/Inference visualization.png)
 
 ---
 
@@ -248,8 +248,12 @@ Both notebooks were uploaded and executed in **AWS SageMaker** (Studio / Noteboo
   * No differences in numerical results
   * SageMaker provides a controlled, scalable execution environment suitable for enterprise workflows
 
-*(Screenshots inserted here)*
+**Book One In Sagemaker**
+  ![bookOneInSagemaker.png](images/bookOneInSagemaker.png)
 
+**Book Two In Sagemaker**
+
+  ![bookTwoInSagemaker.png](images/bookTwoInSagemaker.png)
 ---
 
 ## 10. Final Remarks
@@ -264,4 +268,3 @@ This project demonstrates how machine learning models can be:
 Such understanding is essential when integrating intelligent components into **enterprise-scale digital architectures**.
 
 ---
-
